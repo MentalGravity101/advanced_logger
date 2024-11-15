@@ -68,7 +68,7 @@ class AdvancedLogger:
         """ Mask sensitive data in log messages if enabled. """
         if not self.enable_masking:
             return message
-        # Example patterns for sensitive data (extend as needed)
+        # Patterns for sensitive data
         patterns = [
             (r'\b\d{16}\b', '**** **** **** ****'),  # Mask credit card numbers
             (r'\b\d{3}-\d{2}-\d{4}\b', '***-**-****'),  # Mask SSNs

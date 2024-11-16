@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="advanced_logger",  
+    name="advanced_logging",  
     version="0.0.4",  
     author="Dustan Gunn",  
     author_email="sweepscafe@gmail.com", 

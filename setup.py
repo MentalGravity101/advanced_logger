@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="advanced_logging",  
+    name="adv_logging",
     version="0.0.4",  
     author="Dustan Gunn",  
     author_email="sweepscafe@gmail.com", 
@@ -12,7 +12,6 @@ setup(
     packages=find_packages(where='.', exclude=("tests",)),  
     classifiers=[  
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: GPL License",
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.12",  
@@ -32,6 +31,10 @@ setup(
         ]
     },
     include_package_data=True,  
+    package_data={  
+        '': ['README.md', 'LICENSE'],
+    },
+)
     package_data={  
         '': ['README.md', 'LICENSE'],
     },

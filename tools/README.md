@@ -31,3 +31,8 @@ Log Statistics
 
 Dynamic UI Enhancements
   -Intuitive and visually appealing UI using the ttkbootstrap framework.
+
+
+Near Future: I plan to add CLI support to this application which will allow AdvancedLogger to feed the logs in real time if user desired.
+
+  

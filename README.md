@@ -35,3 +35,9 @@ The enhanced AdvancedLogger library is packed with a wide range of features to m
       Audit Logging: Maintains a separate audit log file for critical events, useful for security and compliance tracking.
       Masking Patterns: Customizable patterns for masking sensitive data in log messages.
       Dynamic Context Updates: Ability to dynamically add or update context information for logs as the application runs.
+
+
+Log Viewer Tool:
+![Screenshot 2024-11-20 222347](https://github.com/user-attachments/assets/688c4b35-0e79-410f-98e2-cb6bba3eee7c)
+
+

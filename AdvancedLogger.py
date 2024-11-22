@@ -7,13 +7,13 @@ import os
 import gzip
 import uuid
 import re
-import boto3  # For AWS CloudWatch
+import boto3 
 from datetime import datetime
 from typing import List, Optional, Dict
 from concurrent.futures import ThreadPoolExecutor
-import requests  # For Splunk integration
+import requests  
 
-# Define color codes using ANSI escape sequences
+
 class LogColors:
     RESET = "\033[0m"
     DEBUG = "\033[94m"  # Blue
@@ -136,7 +136,7 @@ class AdvancedLogger:
     def log_critical(self, message: str):
         self.log_with_context(message, logging.CRITICAL)
 
-# JSON Formatter for structured logging
+
 class JSONFormatter(logging.Formatter):
     def format(self, record):
         log_entry = {
@@ -149,7 +149,7 @@ class JSONFormatter(logging.Formatter):
         }
         return json.dumps(log_entry)
 
-# Splunk Handler for integration
+
 class SplunkHandler(logging.Handler):
     def __init__(self, splunk_url: str, token: str):
         super().__init__()
@@ -168,7 +168,6 @@ class SplunkHandler(logging.Handler):
         except Exception as e:
             print("Error sending log to Splunk:", e)
 
-# AWS CloudWatch Handler for integration
 class CloudWatchHandler(logging.Handler):
     def __init__(self, log_group: str, log_stream: str, region_name: str):
         super().__init__()
